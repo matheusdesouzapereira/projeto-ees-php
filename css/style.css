@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+:root{
+    --fundo: #020c1c;
+    --menu: #182840;
+    --cinza-claro: #e7e5e5;
+}
+body{
+    background-color: var(--fundo);
+}
+/* Configuração do menu a esquerda */
+.menu{
+    background-color: var(--menu);
+    width: 300px;
+    height: 100vh;
+    padding-top: 20px;
+    transition: 0.5s;
+    overflow: auto;
+    display: inline-block;
+}
+.menu .logo{
+    width: 200px;
+    margin-left: 20px;
+}
+.menu .usuario{
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.menu .logout a{
+    color: #fff;
+    margin-left: 10px;
+}
+.menu .menuPrincipal{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.menu ul li{
+    color: #fff;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 5px 0px 5px 5px;
+}
+.menu ul a{
+    text-decoration: none;
+}
+.menu .submenu li:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+.menu .submenu{
+    margin-left: 10px;
+}
+.menu .menuTitulo{
+    font-size: 30px;
+}
+.botaoMenu{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.botaoMenu2{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Condiguração do conteúdo a direita */
+.conteudo{
+    background-color: #fff;
+    height: calc(100vh - 10px);
+    width: calc(100% - 320px);
+    margin: 10px 10px 5px 10px;
+    padding: 20px;
+    position: absolute;
+    display: inline-block;
+    border-radius: 5px;
+    overflow: auto;
+} 
+.conteudo h1{
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Formatação do formulário */
+.formulario{
+    margin-top: 30px;
+}
+.input_form, select{
+    border: none;
+    border-bottom: #ccc solid 1px;
+    padding: 10px;
+    width: 48%;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+option{
+    margin-top: 10px;
+}
+.input_form_textarea{
+    border: #ccc solid 1px;
+    padding: 10px;
+    width: 95%;
+    font-size: 15px;
+    margin: 20px 0px 0px 20px;
+}
+
+/* Formatação dos botões nova proposta */
+.btn-proposta{
+    margin-top: 20px;
+    text-align: center;
+}
+.btn{
+    width: 40%;
+    margin: 10px 20px 10px 20px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.btn:hover{
+    background-color: #ccc;
+}
+/* Botão cadastrar */
+.btn_cadastrar{
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 15px;
+    border: none;
+    background-color: var(--menu);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Formatação da proposta */
+.subtitulo_proposta{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--fundo);
+}
+#idDiv{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.item{
+    text-align: center;
+    background-color: var(--menu);
+    color: #fff;
+    padding: 10px;
+}
+.input-item{
+    width: 100% !important;
+}
+.btn-adicionar{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-adicionar{
+    padding: 10px;
+    border: none;
+    background-color: var(--fundo);
+    color: #fff;
+    cursor: pointer;
+}
+.btn-add{
+    background-color: var(--fundo);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+}
+.remove{
+    text-align: center;
+    margin: 10px;
+}
+.remove a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.w10{
+    width: 100% !important;
+    margin-left: 10px;
+}
+/* Formatação da área de resultados de consulta */
+.area-resultado h1{
+    margin-top: 20px;
+}
+.resultado{
+    border-bottom: 1px solid #eee;
+    margin-top: 20px;
+    padding: 20px 20px 20px 10px;
+}
+
+.resultado .informacoes p{
+    margin-top: 5px;
+}
+.resultado .botoes{
+    padding-top: 20px;
+}
+.resultado .botoes input[type=submit]{
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.resultado .botoes .btn-excluir{
+    background-color: rgb(179, 0, 0);
+    color: #fff;
+}
+.resultado .botoes .btn-visualizar{
+    background-color: rgb(4, 134, 32);
+    color: #fff;
+}
+/* Formatação dos elementos da página de informações (index) */
+.boxes-info{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.box-info{
+    background-color: var(--cinza-claro);
+    width: 33%;
+    margin: 10px;
+    padding: 20px;
+}
+.box-info p{
+    margin-top: 15px;
+}
+
+/* Media */
+
+@media screen and (max-width:1000px){
+    .btn{
+        width: 80%;
+    }
+    .input_form, select{
+        width: 95%;
+    }
+    .conteudo{
+        height: auto;
+    }
+    .menu{
+        height: 100%;
+    }
+}
